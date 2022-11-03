@@ -1,0 +1,7 @@
+User.create(fullname: 'Elon Musk', status: 'Tesla, SpaceX are my life')
+User.create(fullname: 'Bernard Arnault', status: 'The owner of LVMH')
+User.create(fullname: 'Gautam Adani', status: 'The owner of infrastructure, commodities')
+User.create(fullname: 'Bill Gates', status: 'I have Microsoft')
+User.create(fullname: 'Jeff Bezos', status: 'Yees,Amazon is mine')
+User.create(fullname: 'Warren Buffett', status: 'Berkshire Hathaway')
+User.create(fullname: 'Larry Ellison', status: 'Want to make Oracle bigger and stronger')
