@@ -6,7 +6,7 @@ module Api
       def index
         @users = User.all
 
-        render json: @users
+        render json: {usersData: @users, totalUsersCount: @users.count}
       end
 
       # GET /users/1
@@ -40,16 +40,15 @@ module Api
       end
 
       private
-        # Use callbacks to share common setup or constraints between actions.
+      # Use callbacks to share common setup or constraints between actions.
       def set_user
         @user = User.find(params[:id])
       end
 
-       # Only allow a list of trusted parameters through.
+      # Only allow a list of trusted parameters through.
       def user_params
         params.require(:user).permit(:fullname, :status)
       end
     end
   end
 end
-
